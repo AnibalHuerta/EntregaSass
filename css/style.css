@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+.contenedor {
+  background-image: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+header {
+  grid-area: header;
+  border-bottom: solid white;
+  margin: 50px 20px; }
+  header .escalar {
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
+
+@keyframes scale {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.2); } }
+  header nav {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  header .navbar {
+    list-style-type: none;
+    display: flex; }
+  header h1 {
+    color: white;
+    border: solid;
+    background-color: #3a7fff;
+    padding: 5px; }
+  header nav ul li a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    border: solid;
+    background-color: white;
+    color: #2c80ff;
+    width: 150px;
+    padding: 0px 10px;
+    margin: 5px; }
+  header nav ul li a:hover {
+    background-color: #2c80ff;
+    color: white; }
+
+main {
+  grid-area: main;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+  main .card {
+    display: flex;
+    text-align: center;
+    grid-area: card;
+    width: 50%;
+    align-content: center; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center; }
+  footer h3 {
+    margin: 5px;
+    padding: 5px;
+    border: solid;
+    color: white;
+    background-color: white; }
+  footer .ig {
+    background-color: white;
+    border-radius: 100px;
+    border: solid;
+    color: #3ca1ff;
+    width: 50px; }

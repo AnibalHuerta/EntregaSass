@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "../utilities/variables";
+
+//comentario en scss
+// los super poderes en scss
+//nesting
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+   background-image: url(../img/fondo.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   display: grid;
+   grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+
+header{
+        grid-area: header;
+        border-bottom: solid white;
+        margin: 50px 20px;
+        .escalar {
+            animation-name: scale;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scale {
+                from{
+                    transform: scale(1);
+                }
+            
+                to{
+                    transform: scale(1.2);
+                }
+            }
+            nav{
+                margin: 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .navbar{
+                list-style-type: none;
+                display: flex;
+            }
+            h1{
+                color: $color-texto;
+                border: solid;
+                background-color: rgb(58, 127, 255);
+                padding: 5px;
+            }
+            
+            
+            nav ul li a{
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+                border: solid;
+                background-color: white;
+                color: rgb(44, 128, 255);
+                width: 150px;
+                padding: 0px 10px;
+                margin: 5px;
+            
+             }
+            
+             nav ul li a:hover{
+                 background-color: rgb(44, 128, 255);
+                 color: white;
+             }
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    .card {
+        display: flex;
+        text-align: center;
+        grid-area: card;
+        width: 50%;
+        align-content: center;
+    }
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    h3{
+        margin: 5px;
+         padding: 5px;
+         border: solid;
+         color: $color-texto;
+         background-color: white;
+     }
+     .ig{
+        background-color: white;
+        border-radius: 100px;
+        border: solid;
+        color: rgb(60, 161, 255);
+        width: 50px;
+    }
+     }
