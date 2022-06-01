@@ -1,9 +1,10 @@
+@import "scss/productos";
+@import "scss/contacto";
+@import "scss/impresiones3d";
+@import "scss/nosotros";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "../utilities/variables";
-
-//comentario en scss
-// los super poderes en scss
-//nesting
+@import "../utilities/medias";
 
 *{
     margin: 0%;

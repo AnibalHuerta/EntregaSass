@@ -1,4 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+main .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main .productos .tituloProductos {
+    text-align: center;
+    border: solid;
+    color: white;
+    background-color: rgba(27, 118, 255, 0.753);
+    width: 250px;
+    margin: 5px; }
+  main .productos .cajasproductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px; }
+    main .productos .cajasproductos img {
+      border: solid;
+      border-color: white;
+      margin: 2px; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  main .telcontact {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(6, 143, 255, 0.808);
+    color: white;
+    height: 90px;
+    padding: 0px 10px; }
+  main .formulario {
+    display: block;
+    width: 500px;
+    margin: 0px 5px; }
+
+main .tituloyparrafo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  main .tituloyparrafo .textosimpresiones {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 300px;
+    background-color: rgba(0, 132, 255, 0.767);
+    border: solid;
+    border-color: black;
+    color: white;
+    padding: 5px 5px; }
+  main .tituloyparrafo .imagenesimpresiones {
+    display: flex;
+    flex-direction: column; }
+    main .tituloyparrafo .imagenesimpresiones .imaguno {
+      margin: 10px;
+      border: solid;
+      color: #2d65ff; }
+    main .tituloyparrafo .imagenesimpresiones .imagdos {
+      margin: 10px;
+      border: solid;
+      color: #2d65ff; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  main .textosnosotros {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    color: white;
+    border-color: #2f71ff;
+    background-color: rgba(21, 56, 102, 0.74);
+    padding: 5px;
+    margin: 10px; }
+
+iframe {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  border-color: white; }
+
+@media screen and (max-width: 600px) {
+  header {
+    display: block; }
+    header .navbar {
+      display: block; }
+    header h1 {
+      display: none; }
+  main {
+    margin: 1rem;
+    grid-template-areas: "card"; }
+  footer {
+    flex-direction: column;
+    align-items: center; }
+  .tituloyparrafo {
+    flex-direction: column; }
+  .tituloProductos {
+    font-size: 20px; }
+  .cajasproductos {
+    width: 500px; }
+  .textosnosotros {
+    font-size: 10px; }
+  iframe {
+    width: 300px;
+    height: 200px; }
+  .textosimpresiones {
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  header {
+    display: block; }
+  .navbar {
+    display: block; }
+  h1 {
+    display: none; }
+  main {
+    display: grid;
+    grid-template-areas: "card"; }
+  .card {
+    justify-items: center; }
+  /*
+    .textoscentral{
+        flex-direction: column;
+    }
+*/
+  footer {
+    flex-direction: column;
+    align-items: center; }
+  .tituloyparrafo {
+    flex-direction: column; }
+  .tituloProductos {
+    font-size: 20px; }
+  .cajasproductos {
+    width: 500px; }
+  .textosnosotros {
+    font-size: 10px; }
+  iframe {
+    width: 300px;
+    height: 200px; }
+  .textosimpresiones {
+    text-align: center; } }
+
 * {
   margin: 0%;
   padding: 0%;
