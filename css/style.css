@@ -5,11 +5,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
-.contenedor {
+body {
   background-image: url(../img/fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; }
+
+.contenedor {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
@@ -77,7 +79,7 @@ footer {
     margin: 5px;
     padding: 5px;
     border: solid;
-    color: white;
+    color: #073394 134, 217, 255;
     background-color: white; }
   footer .ig {
     background-color: white;
