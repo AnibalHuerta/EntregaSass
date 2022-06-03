@@ -3,8 +3,10 @@
 @import "scss/impresiones3d";
 @import "scss/nosotros";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import "../utilities/variables";
-@import "../utilities/medias";
+@import "base/variables";
+@import "utilities/medias";
+@import "base/mixins";
+@import "base/extend";
 
 *{
     margin: 0%;
@@ -29,7 +31,7 @@ body{
 header{
         grid-area: header;
         border-bottom: solid white;
-        margin: 50px 20px;
+        margin: 20px 0px;
         .escalar {
             animation-name: scale;
             animation-duration: 5s;
@@ -46,7 +48,7 @@ header{
                 }
             }
             nav{
-                margin: 30px;
+                margin: 1rem;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -56,10 +58,13 @@ header{
                 display: flex;
             }
             h1{
+                text-align: center;
+                width:350px;
                 color: $color-texto;
-                border: solid;
+                border: solid 1px;
                 background-color: rgb(58, 127, 255);
                 padding: 5px;
+                z-index: -1px;
             }
             
             
@@ -67,7 +72,7 @@ header{
                 display: flex;
                 text-decoration: none;
                 justify-content: center;
-                border: solid;
+                @extend %botones;
                 background-color: white;
                 color: rgb(44, 128, 255);
                 width: 150px;
@@ -95,6 +100,15 @@ main{
         grid-area: card;
         width: 50%;
         align-content: center;
+        .card-body{
+             p .card-text{
+                color: rgb(2, 1, 1);
+            }
+            a .btn.btn-primar {
+                color: white;
+                background-color: white;
+            }
+        }
     }
 }
 
@@ -102,18 +116,13 @@ footer{
     grid-area: footer;
     display: flex;
     justify-content: center;
-    h3{
-        margin: 5px;
-         padding: 5px;
-         border: solid;
-         color: $color-texto2;
-         background-color: white;
-     }
+    align-items: center;
+    @include piedepagina;
+    height: 60px;
      .ig{
-        background-color: white;
         border-radius: 100px;
-        border: solid;
         color: rgb(60, 161, 255);
         width: 50px;
+        margin: 10px;
     }
      }

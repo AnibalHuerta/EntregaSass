@@ -20,22 +20,19 @@ main .productos {
       border-color: white;
       margin: 2px; }
 
-main {
+main .telcontact {
   display: flex;
-  flex-direction: row;
-  align-items: center; }
-  main .telcontact {
-    display: flex;
-    text-align: center;
-    font-size: 20px;
-    background-color: rgba(6, 143, 255, 0.808);
-    color: white;
-    height: 90px;
-    padding: 0px 10px; }
-  main .formulario {
-    display: block;
-    width: 500px;
-    margin: 0px 5px; }
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(6, 143, 255, 0.808);
+  color: white;
+  height: 90px;
+  padding: 0px 10px; }
+
+main .formulario {
+  display: block;
+  width: 500px;
+  margin: 0px 5px; }
 
 main .tituloyparrafo {
   display: flex;
@@ -84,13 +81,11 @@ iframe {
   border: solid;
   border-color: white; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   header .barraSup {
     display: block; }
     header .barraSup .navbar {
       display: block; }
-    header .barraSup h1 {
-      display: none; }
   main {
     margin: 1rem;
     grid-template-areas: "card"; }
@@ -98,10 +93,12 @@ iframe {
       flex-direction: column; }
     main .tituloProductos {
       font-size: 20px; }
-    main .cajasproductos {
-      width: 500px; }
-    main .textosnosotros {
-      font-size: 10px; }
+    main .productos {
+      display: flex; }
+      main .productos .cajasproductos {
+        width: 500px; }
+      main .productos .textosnosotros {
+        font-size: 10px; }
     main iframe {
       width: 300px;
       height: 200px; }
@@ -111,7 +108,7 @@ iframe {
     flex-direction: column;
     align-items: center; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 376px) {
   header .barraSup {
     display: block; }
   header .navbar {
@@ -123,14 +120,11 @@ iframe {
     grid-template-areas: "card"; }
   .card {
     justify-items: center; }
-  /*
-    .textoscentral{
-        flex-direction: column;
-    }
-*/
   footer {
-    flex-direction: column;
-    align-items: center; }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%; }
   .tituloyparrafo {
     flex-direction: column; }
   .tituloProductos {
@@ -144,6 +138,11 @@ iframe {
     height: 200px; }
   .textosimpresiones {
     text-align: center; } }
+
+header nav ul li a {
+  border: solid 1px white;
+  border-radius: 2px;
+  padding: 5px; }
 
 * {
   margin: 0%;
@@ -164,7 +163,7 @@ body {
 header {
   grid-area: header;
   border-bottom: solid white;
-  margin: 50px 20px; }
+  margin: 20px 0px; }
   header .escalar {
     animation-name: scale;
     animation-duration: 5s;
@@ -177,7 +176,7 @@ header {
   to {
     transform: scale(1.2); } }
   header nav {
-    margin: 30px;
+    margin: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center; }
@@ -185,15 +184,17 @@ header {
     list-style-type: none;
     display: flex; }
   header h1 {
+    text-align: center;
+    width: 350px;
     color: white;
-    border: solid;
+    border: solid 1px;
     background-color: #3a7fff;
-    padding: 5px; }
+    padding: 5px;
+    z-index: -1px; }
   header nav ul li a {
     display: flex;
     text-decoration: none;
     justify-content: center;
-    border: solid;
     background-color: white;
     color: #2c80ff;
     width: 150px;
@@ -216,20 +217,22 @@ main {
     grid-area: card;
     width: 50%;
     align-content: center; }
+    main .card .card-body p .card-text {
+      color: #020101; }
+    main .card .card-body a .btn.btn-primar {
+      color: white;
+      background-color: white; }
 
 footer {
   grid-area: footer;
   display: flex;
-  justify-content: center; }
-  footer h3 {
-    margin: 5px;
-    padding: 5px;
-    border: solid;
-    color: #073394 134, 217, 255;
-    background-color: white; }
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #073394 134, 217, 255;
+  height: 60px; }
   footer .ig {
-    background-color: white;
     border-radius: 100px;
-    border: solid;
     color: #3ca1ff;
-    width: 50px; }
+    width: 50px;
+    margin: 10px; }
