@@ -1,7 +1,7 @@
-@import "scss/productos";
-@import "scss/contacto";
-@import "scss/impresiones3d";
-@import "scss/nosotros";
+@import "productos";
+@import "contacto";
+@import "impresiones3d";
+@import "nosotros";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "base/variables";
 @import "utilities/medias";
@@ -115,14 +115,19 @@ main{
 footer{
     grid-area: footer;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     @include piedepagina;
-    height: 60px;
+    height: 100px;
+     h3{
+         padding-top: 10px;
+         margin: 5px;
+         
+     }
      .ig{
+        margin: 5px;
         border-radius: 100px;
         color: rgb(60, 161, 255);
         width: 50px;
-        margin: 10px;
     }
      }

@@ -21,18 +21,19 @@ main .productos {
       margin: 2px; }
 
 main .telcontact {
-  display: flex;
+  display: block;
   text-align: center;
   font-size: 20px;
   background-color: rgba(6, 143, 255, 0.808);
   color: white;
-  height: 90px;
+  border: solid white 1px;
   padding: 0px 10px; }
 
 main .formulario {
   display: block;
   width: 500px;
-  margin: 0px 5px; }
+  margin: 0px 5px;
+  justify-content: center; }
 
 main .tituloyparrafo {
   display: flex;
@@ -49,6 +50,10 @@ main .tituloyparrafo {
     border-color: black;
     color: white;
     padding: 5px 5px; }
+    main .tituloyparrafo .textosimpresiones .colorcontacto {
+      color: #bfd400;
+      text-decoration: none;
+      font-size: larger; }
   main .tituloyparrafo .imagenesimpresiones {
     display: flex;
     flex-direction: column; }
@@ -68,24 +73,24 @@ main {
   main .textosnosotros {
     display: flex;
     flex-direction: column;
-    border: solid;
+    border: solid 1px white;
     color: white;
-    border-color: #2f71ff;
     background-color: rgba(21, 56, 102, 0.74);
-    padding: 5px;
+    padding: 10px;
     margin: 10px; }
 
 iframe {
   display: flex;
   flex-direction: column;
-  border: solid;
-  border-color: white; }
+  border: solid 1px white; }
 
 @media screen and (max-width: 767px) {
   header .barraSup {
     display: block; }
     header .barraSup .navbar {
       display: block; }
+    header .barraSup h1 {
+      display: none; }
   main {
     margin: 1rem;
     grid-template-areas: "card"; }
@@ -226,13 +231,16 @@ main {
 footer {
   grid-area: footer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: white;
   color: #073394 134, 217, 255;
-  height: 60px; }
+  height: 100px; }
+  footer h3 {
+    padding-top: 10px;
+    margin: 5px; }
   footer .ig {
+    margin: 5px;
     border-radius: 100px;
     color: #3ca1ff;
-    width: 50px;
-    margin: 10px; }
+    width: 50px; }
