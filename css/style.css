@@ -20,20 +20,58 @@ main .productos {
       border-color: white;
       margin: 2px; }
 
-main .telcontact {
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  viewport-fit: 100%; }
+  footer h3 {
+    padding-top: 10px;
+    margin: 5px; }
+  footer .ig {
+    margin: 5px;
+    border-radius: 100px;
+    color: #3ca1ff;
+    width: 50px; }
+
+main div.telcontact {
   display: block;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 20px;
   background-color: rgba(6, 143, 255, 0.808);
   color: white;
   border: solid white 1px;
-  padding: 0px 10px; }
+  padding: 10px 10px;
+  margin: 10px 10px; }
 
 main .formulario {
-  display: block;
-  width: 500px;
-  margin: 0px 5px;
-  justify-content: center; }
+  margin: 10px 5px; }
+  main .formulario input {
+    display: block;
+    height: 40px; }
+  main .formulario .botones {
+    display: flex;
+    justify-content: center;
+    padding: 10px; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; }
+  footer h3 {
+    padding-top: 10px;
+    margin: 5px; }
+  footer .ig {
+    margin: 5px;
+    border-radius: 100px;
+    color: #3ca1ff;
+    width: 50px; }
 
 main .tituloyparrafo {
   display: flex;
@@ -56,7 +94,8 @@ main .tituloyparrafo {
       font-size: larger; }
   main .tituloyparrafo .imagenesimpresiones {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 40%; }
     main .tituloyparrafo .imagenesimpresiones .imaguno {
       margin: 10px;
       border: solid;
@@ -65,6 +104,21 @@ main .tituloyparrafo {
       margin: 10px;
       border: solid;
       color: #2d65ff; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; }
+  footer h3 {
+    padding-top: 10px;
+    margin: 5px; }
+  footer .ig {
+    margin: 5px;
+    border-radius: 100px;
+    color: #3ca1ff;
+    width: 50px; }
 
 main {
   display: flex;
@@ -84,7 +138,22 @@ iframe {
   flex-direction: column;
   border: solid 1px white; }
 
-@media screen and (max-width: 767px) {
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; }
+  footer h3 {
+    padding-top: 10px;
+    margin: 5px; }
+  footer .ig {
+    margin: 5px;
+    border-radius: 100px;
+    color: #3ca1ff;
+    width: 50px; }
+
+@media screen and (max-width: 900px) {
   header .barraSup {
     display: block; }
     header .barraSup .navbar {

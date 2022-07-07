@@ -25,3 +25,23 @@ main{
         }
     }
 }
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    viewport-fit: 100%;
+     h3{
+         padding-top: 10px;
+         margin: 5px;
+         
+     }
+     .ig{
+        margin: 5px;
+        border-radius: 100px;
+        color: rgb(60, 161, 255);
+        width: 50px;
+    }
+     }
